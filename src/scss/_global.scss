@@ -1,0 +1,128 @@
+// Import Font Poppins
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+
+html,
+body,
+#root {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+#root {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+body {
+    scroll-behavior: smooth;
+    background-color: white;
+    color: black;
+    font-family: "Poppins", sans-serif;
+    display: flex;
+    flex-direction: column;
+}
+
+.dark body {
+    background: #0e0e11;
+    color: white;
+}
+
+/**************************************/
+
+$color-primary: #0e0e11;
+$color-secondary: #18181a;
+$color-accent: #479f26;
+$color-accent-light: #4dbb25;
+
+/**************************************/
+
+.roa-container {
+    width: 85%;
+    max-width: 1440px;
+
+    @media screen and (max-width: 1000px) {
+        width: 90%;
+    }
+
+    @media screen and (max-width: 700px) {
+        width: 92%;
+    }
+}
+
+.roa-container-site {
+    margin: 0 auto;
+    margin-top: 120px;
+    margin-bottom: 100px;
+    width: 85%;
+    max-width: 1440px;
+    height: 100%;
+
+    @media screen and (max-width: 1000px) {
+        width: 90%;
+    }
+
+    @media screen and (max-width: 700px) {
+        width: 92%;
+    }
+}
+
+// Basis-Style für alle Buttons
+.btn-base {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 0px 20px -12px rgb(0, 0, 0, 1);
+    border-radius: 16px;
+    transition: all 0.2s ease;
+    cursor: pointer;
+
+    svg,
+    p {
+        transition: all 0.2s ease;
+    }
+
+    &:hover {
+        background: $color-accent-light;
+    }
+}
+
+// Normaler Button-Style
+.btn {
+    @extend .btn-base;
+    background: $color-accent;
+    padding: 15px 20px;
+    font-size: 16px;
+    gap: 12px;
+}
+
+// Colormode-Button-Style
+.btn-colormode {
+    @extend .btn-base;
+    padding: 15px 20px;
+    font-size: 16px;
+    gap: 12px;
+}
+
+// Quadratischer Button-Style
+.btn-cube {
+    @extend .btn-base;
+    background: $color-accent;
+    width: 50px;
+    height: 50px;
+}
+
+// Karte
+.card {
+    box-shadow: 0 10px 20px -12px rgba(16, 24, 40, 0.2);
+    border: 1px solid #d4d4d8;
+    border-radius: 1rem;
+    background: white;
+    overflow: hidden;
+}
+
+.dark .card {
+    border-color: #27272a;
+    background: $color-secondary;
+}
