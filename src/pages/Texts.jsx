@@ -23,14 +23,33 @@ function Test() {
             <Text type="tiny" center>
                 tiny Text
             </Text>
-            <Text type="h1" bold>Überschrift Bold</Text>
-            <Text type="h1" bold center >Überschrift Bold Center</Text>
-            <Text type="h2" bold center color="default">Überschrift Color Default</Text>
-            <Text type="h2" bold center color="inverted">Überschrift Color Inverted</Text>
-            <Text type="h2" bold center color="error">Überschrift Color Error</Text>
-            <Text type="h2" bold center color="warning">Überschrift Color Warning</Text>
-            <Text type="h2" bold center color="success">Überschrift Color Success</Text>
-            <Text type="h2" bold center color="muted">Überschrift Color Muted</Text>
+            <Text type="h1" bold>
+                Überschrift Bold
+            </Text>
+            <Text type="h1" bold center>
+                Überschrift Bold Center
+            </Text>
+            <Text type="h2" bold center color="default">
+                Überschrift Color Default
+            </Text>
+            <Text type="h2" bold center color="inverted">
+                Überschrift Color Inverted
+            </Text>
+            <Text type="h2" bold center color="accent">
+                Überschrift Color Accent
+            </Text>
+            <Text type="h2" bold center color="error">
+                Überschrift Color Error
+            </Text>
+            <Text type="h2" bold center color="warning">
+                Überschrift Color Warning
+            </Text>
+            <Text type="h2" bold center color="success">
+                Überschrift Color Success
+            </Text>
+            <Text type="h2" bold center color="muted">
+                Überschrift Color Muted
+            </Text>
         </div>
     );
 }

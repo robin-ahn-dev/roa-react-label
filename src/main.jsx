@@ -6,8 +6,8 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import "./style.scss";
 
 // Pages
-import { App, Buttons, Texts } from "./pages/-pages.js"
-import { Navbar } from "./modules/-modules.js"
+import { App, Buttons, Texts } from "./pages/-pages.js";
+import { Navbar } from "./modules/-modules.js";
 import { PagesProvider } from "./hooks/usePages.jsx";
 
 const Main = () => {

@@ -15,7 +15,8 @@ function Input({
     full = false,
     bold = false,
 }) {
-    const baseClass = "text-sm rounded-normal border px-4 py-2 focus:outline-none focus:ring-2";
+    const baseClass =
+        "text-sm rounded-normal border px-4 py-2 focus:outline-none focus:ring-2";
     const fullClass = full ? "w-full" : "";
     const boldClass = bold ? "font-bold" : "";
     const disabledClass = disabled ? "opacity-50 cursor-not-allowed" : "";
@@ -24,7 +25,8 @@ function Input({
         error: "border-red-500 focus:ring-red-200",
         success: "border-green-500 focus:ring-green-200",
         warning: "border-yellow-500 focus:ring-yellow-200",
-        default: "border-gray-300 focus:ring-gray-200 dark:border-gray-600 dark:focus:ring-gray-700",
+        default:
+            "border-gray-300 focus:ring-gray-200 dark:border-gray-600 dark:focus:ring-gray-700",
     };
 
     const getStatusClass = () => {
@@ -61,4 +63,4 @@ function Input({
     );
 }
 
-export default Input; 
+export default Input;

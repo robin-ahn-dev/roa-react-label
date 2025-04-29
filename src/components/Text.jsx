@@ -24,7 +24,7 @@ function Text({
     const colorStyles = {
         default: "text-black dark:text-white",
         inverted: "text-white dark:text-black",
-        primary: "text-blue-500 dark:text-blue-400",
+        accent: "text-accenttext dark:text-accenttext",
         success: "text-green-500 dark:text-green-400",
         error: "text-red-500 dark:text-red-400",
         warning: "text-yellow-500 dark:text-yellow-400",
@@ -35,7 +35,9 @@ function Text({
     const colorClass = colorStyles[color] || colorStyles.default;
 
     return (
-        <p className={`${baseClass} ${typeClass} ${boldClass} ${centerClass} ${colorClass} ${className}`}>
+        <p
+            className={`${baseClass} ${typeClass} ${boldClass} ${centerClass} ${colorClass} ${className}`}
+        >
             {children}
         </p>
     );

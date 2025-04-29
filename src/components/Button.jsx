@@ -23,7 +23,7 @@ function Button({
 
     const typeStyles = {
         outline:
-            "bg-transparent border-primarytext-black dark:text-white dark:border-white",
+            "bg-transparent border-primarytext dark:text-white dark:border-white",
         success: "bg-green-500 text-white border-green-500",
         error: "bg-red-500 text-white border-red-500",
         warning: "bg-yellow-500 text-white border-yellow-500",

@@ -5,28 +5,32 @@ export default {
     theme: {
         extend: {
             colors: {
-                "primary": "#000000",
-                "secondary": "#ffffff",
-                "primarytext": "#000000",
-                "secondarytext": "#ffffff",
-                "primarybg": "#ffffff",
-                "secondarybg": "#0e0e11",
+                primary: "#18181a",
+                secondary: "#ffffff",
+                primarytext: "#18181a",
+                secondarytext: "#ffffff",
+                accenttext: "#2564eb",
+                primarybg: "#ffffff",
+                secondarybg: "#0e0e11",
+                cardbg: "#151517",
             },
             borderRadius: {
-                "normal": "10px",
+                normal: "10px",
             },
-            
+
             // Theme Blue
             // colors: {
-            //     "primary": "#2564eb",
-            //     "secondary": "#2564eb",
-            //     "primarytext": "#ffffff",
-            //     "secondarytext": "#ffffff",
-            //     "primarybg": "#ffffff",
-            //     "secondarybg": "#000000",
+            //     primary: "#21c55e",
+            //     secondary: "#21c55e",
+            //     primarytext: "#ffffff",
+            //     secondarytext: "#ffffff",
+            //     accenttext: "#21c55e",
+            //     primarybg: "#ffffff",
+            //     secondarybg: "#0e0e11",
+            //     cardbg: "#1c1918",
             // },
             // borderRadius: {
-            //     "normal": "100px",
+            //     normal: "100px",
             // },
         },
     },

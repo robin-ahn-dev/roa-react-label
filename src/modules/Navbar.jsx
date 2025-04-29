@@ -23,9 +23,14 @@ function Navbar() {
     return (
         <div className="fixed roa-container top-5 left-[50%] translate-x-[-50%] z-50">
             <div className="bg-primarybg dark:bg-secondarybg w-full h-full absolute -top-5 left-0 -z-10"></div>
-            <Card className="rounded-2xl flex justify-between items-center px-2 py-2 !overflow-visible z-50">
+            <Card
+                className="rounded-2xl flex justify-between items-center px-2 py-2 !overflow-visible z-50"
+                noPadding
+            >
                 <ColorSwitch />
-                <Text type="default" bold>{pageTitle}</Text>
+                <Text type="default" bold>
+                    {pageTitle}
+                </Text>
                 <div className="relative">
                     <Button
                         onlyIcon={<AlignLeft />}

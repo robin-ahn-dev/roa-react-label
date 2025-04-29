@@ -25,10 +25,9 @@ function ColorSwitch() {
 
     return (
         <Button
-            onlyIcon={darkMode ? <Moon /> : <Sun /> }
+            onlyIcon={darkMode ? <Moon /> : <Sun />}
             onClick={handleColorSwitch}
-        >
-        </Button>
+        ></Button>
     );
 }
 
