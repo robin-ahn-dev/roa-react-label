@@ -21,6 +21,9 @@ export default {
                     950: "#11280b",
                 },
             },
+            borderRadius: {
+                "normal": "10px",
+            },
         },
     },
     plugins: [],

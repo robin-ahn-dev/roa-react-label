@@ -23,7 +23,7 @@ function ColorSwitch() {
 
     return (
         <div
-            className="fixed w-[100px] h-[50px] top-10 right-4 flex rounded-2xl cursor-pointer bg-apple-600 dark:bg-apple-600 shadow-[-1px_1px_25px_rgba(0,0,0,0.3)]"
+            className="relative w-[100px] h-[50px] flex rounded-2xl cursor-pointer bg-apple-600 dark:bg-apple-600 shadow-[-1px_1px_25px_rgba(0,0,0,0.3)]"
             onClick={handleColorSwitch}
         >
             <motion.div

@@ -11,6 +11,7 @@ import {
 import { Link } from "react-router-dom";
 import Text from "./Text";
 import { usePages } from "../hooks/usePages";
+import ColorSwitch from "./ColorSwitch";
 
 function Navbar() {
     const { pageTitle, setPageTitle } = usePages();
@@ -36,13 +37,14 @@ function Navbar() {
                     </Link>
                 </div>
                 <div>
-                    <Text
+                    {/* <Text
                         type="h1"
                         bold
                         clazzName={"text-black dark:text-white text-lg"}
                     >
                         {pageTitle}
-                    </Text>
+                    </Text> */}
+                    <ColorSwitch />
                 </div>
                 <div className="relative">
                     <button
