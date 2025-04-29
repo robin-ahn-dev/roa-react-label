@@ -68,17 +68,3 @@ $color-accent-light: #4dbb25;
         width: 92%;
     }
 }
-
-// Karte
-.card {
-    box-shadow: 0 10px 20px -12px rgba(16, 24, 40, 0.2);
-    border: 1px solid #d4d4d8;
-    border-radius: 1rem;
-    background: white;
-    overflow: hidden;
-}
-
-.dark .card {
-    border-color: #27272a;
-    background: $color-secondary;
-}
