@@ -5,25 +5,29 @@ export default {
     theme: {
         extend: {
             colors: {
-                primary: "#0E0E11",
-                secondary: "#18181A",
-                apple: {
-                    50: "#f1fbea",
-                    100: "#dff5d2",
-                    200: "#c0ecaa",
-                    300: "#98de78",
-                    400: "#74cd4e",
-                    500: "#54b32f",
-                    600: "#469f26",
-                    700: "#326d1e",
-                    800: "#2b571d",
-                    900: "#274a1d",
-                    950: "#11280b",
-                },
+                "primary": "#000000",
+                "secondary": "#ffffff",
+                "primarytext": "#000000",
+                "secondarytext": "#ffffff",
+                "primarybg": "#ffffff",
+                "secondarybg": "#0e0e11",
             },
             borderRadius: {
                 "normal": "10px",
             },
+            
+            // Theme Blue
+            // colors: {
+            //     "primary": "#2564eb",
+            //     "secondary": "#2564eb",
+            //     "primarytext": "#ffffff",
+            //     "secondarytext": "#ffffff",
+            //     "primarybg": "#ffffff",
+            //     "secondarybg": "#000000",
+            // },
+            // borderRadius: {
+            //     "normal": "100px",
+            // },
         },
     },
     plugins: [],

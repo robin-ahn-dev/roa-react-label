@@ -23,12 +23,12 @@ function Button({
 
     const typeStyles = {
         outline:
-            "bg-transparent border-black text-black dark:text-white dark:border-white",
+            "bg-transparent border-primarytext-black dark:text-white dark:border-white",
         success: "bg-green-500 text-white border-green-500",
         error: "bg-red-500 text-white border-red-500",
         warning: "bg-yellow-500 text-white border-yellow-500",
         default:
-            "bg-black text-white border-black dark:border-white dark:bg-white dark:text-black",
+            "bg-primary dark:bg-secondary text-secondarytext border-primary dark:border-secondary dark:text-primarytext",
     };
 
     const typeClass = typeStyles[type] || typeStyles.default;
