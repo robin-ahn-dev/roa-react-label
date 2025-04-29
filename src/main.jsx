@@ -6,9 +6,8 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import "./style.scss";
 
 // Pages
-import App from "./pages/App.jsx";
-import Test from "./pages/Test.jsx";
-import Navbar from "./components/Navbar.jsx";
+import { App, Buttons, Texts } from "./pages/-pages.js"
+import { Navbar } from "./modules/-modules.js"
 import { PagesProvider } from "./hooks/usePages.jsx";
 
 const Main = () => {
@@ -36,7 +35,8 @@ const Main = () => {
                 <Navbar />
                 <Routes>
                     <Route path="/" element={<App />} />
-                    <Route path="/test" element={<Test />} />
+                    <Route path="/texts" element={<Texts />} />
+                    <Route path="/buttons" element={<Buttons />} />
                 </Routes>
             </PagesProvider>
         </Router>
