@@ -32,23 +32,18 @@ function Navbar() {
                     <div
                         className={`absolute -right-[9px] top-[70px] card bg-secondary px-2 py-2 sm:p-4 ${navMenuOpen ? "block" : "hidden"} z-50 bg-white dark:bg-primary`}
                     >
-                        <div className="flex flex-col gap-3 transition-all duration-300 z-50 bg-white dark:bg-primary">
+                        <div className="flex flex-col gap-3 z-50 bg-white dark:bg-primary">
                             {links.map(({ to, icon, text }, index) => (
                                 <Link
                                     to={to}
                                     key={index}
-                                    className={`w-[50px] h-[50px] sm:w-[180px] sm:h-[60px] flex flex-row gap-5 items-center justify-center sm:justify-start border-[1px] border-apple-600 rounded-2xl bg-white dark:bg-primary text-black dark:text-white ${pageTitle == text ? "!bg-apple-500 !text-white" : ""}`}
+                                    className={`w-[150px] h-[50px] flex flex-row items-center justify-center border-[1px] border-black dark:border-white rounded-normal bg-white dark:bg-primary text-black dark:text-white ${pageTitle == text ? "!bg-black dark:!bg-white !text-white dark:!text-black" : ""}`}
                                     onClick={() => (
                                         setPageTitle(text),
                                         setNavMenuOpen(false)
                                     )}
                                 >
-                                    <div
-                                        className={`sm:ml-5 ${pageTitle == text ? "text-white" : "text-apple-500 "}`}
-                                    >
-                                        {icon}
-                                    </div>
-                                    <p className="hidden sm:block text-center">
+                                    <p className="block text-center">
                                         {text}
                                     </p>
                                 </Link>
