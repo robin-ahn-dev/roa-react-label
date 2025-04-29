@@ -1,32 +1,43 @@
 import React from "react";
 
-function getFontWeightClass(bold) {
-    return bold ? "font-bold" : "font-normal";
-}
+function Text({
+    children,
+    type = "default",
+    bold = false,
+    center = false,
+    className = "",
+    color = "default",
+}) {
+    const baseClass = "text-sm";
+    const boldClass = bold ? "font-bold" : "";
+    const centerClass = center ? "text-center" : "";
 
-function getTextAlignmentClass(center) {
-    return center ? "text-center" : "text-left";
-}
+    const typeStyles = {
+        h1: "!text-3xl",
+        h2: "!text-2xl",
+        h3: "!text-xl",
+        default: "!text-base",
+        small: "!text-sm",
+        tiny: "!text-xs",
+    };
 
-function getTextSizeClass(type) {
-    switch (type) {
-        case "h1":
-            return "text-3xl";
-        case "h2":
-            return "text-2xl";
-        default:
-            return "text-base";
-    }
-}
+    const colorStyles = {
+        default: "text-black dark:text-white",
+        primary: "text-blue-500 dark:text-blue-400",
+        success: "text-green-500 dark:text-green-400",
+        error: "text-red-500 dark:text-red-400",
+        warning: "text-yellow-500 dark:text-yellow-400",
+        muted: "text-gray-500 dark:text-gray-400",
+    };
 
-function Text({ children, type, bold = false, center = false, clazzName = "" }) {
-    const fontWeightClass = getFontWeightClass(bold);
-    const textAlignClass = getTextAlignmentClass(center);
-    const textSizeClass = getTextSizeClass(type);
+    const typeClass = typeStyles[type] || typeStyles.default;
+    const colorClass = colorStyles[color] || colorStyles.default;
 
-    const textClass = `${fontWeightClass} ${textAlignClass} ${textSizeClass} ${clazzName}`.trim();
-
-    return <p className={textClass}>{children}</p>;
+    return (
+        <p className={`${baseClass} ${typeClass} ${boldClass} ${centerClass} ${colorClass} ${className}`}>
+            {children}
+        </p>
+    );
 }
 
 export default Text;

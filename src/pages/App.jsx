@@ -1,6 +1,7 @@
 import React from "react";
 import Text from "../components/Text";
 import Button from "../components/Button";
+import Input from "../components/Input";
 import { Moon } from "lucide-react";
 
 function App() {
@@ -10,6 +11,7 @@ function App() {
                 Herzlich Willkommen beim Roa React Label
             </Text>
             <Button text="Set Goal" type="normal" />
+            <Input text="Set Goal" type="normal" />
             <Button text="Set Goal" type="outline" />
             <Button text="Set Goal" type="success" />
             <Button text="Set Goal" type="warning" />
