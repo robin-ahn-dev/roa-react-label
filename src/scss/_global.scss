@@ -81,6 +81,7 @@ input[type="file"]::file-selector-button {
 }
 
 /*************** Checkbox ***************/
+
 input[type="checkbox"] {
     -webkit-appearance: none;
     -moz-appearance: none;
@@ -120,6 +121,39 @@ input[type="checkbox"]:checked::after {
 
 .dark input[type="checkbox"]:checked::after{
     background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIGNsYXNzPSJsdWNpZGUgbHVjaWRlLWNoZWNrLWljb24gbHVjaWRlLWNoZWNrIj48cGF0aCBkPSJNMjAgNiA5IDE3bC01LTUiLz48L3N2Zz4=");
+}
+
+/*************** Radio ***************/
+
+input[type="radio"] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    border: 1px solid black;
+    background: transparent;
+}
+
+.dark input[type="radio"] {
+    border: 1px solid white;
+    background: transparent;
+}
+
+input[type="radio"]:checked::after {
+    content: "";
+    display: block;
+    background: black;
+    border-radius: 50%;
+    width: 11px;
+    height: 11px;
+    margin-left: 1.5px;
+    margin-top: 1.5px;
+}
+
+.dark input[type="radio"]:checked::after {
+    background: white;
 }
 
 /******************************************/
