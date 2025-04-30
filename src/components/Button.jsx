@@ -19,7 +19,7 @@ function Button({
     const sizeClass = onlyIcon ? "w-[50px] h-[50px] p-0" : "py-[7px] px-4";
     const fullClass = full ? "w-full" : "";
     const boldClass = bold ? "font-bold" : "";
-    const disabledClass = disabled ? "opacity-50 cursor-not-allowed" : "";
+    const disabledClass = disabled ? "opacity-20 cursor-not-allowed" : "";
 
     const typeStyles = {
         outline:
@@ -45,7 +45,7 @@ function Button({
         >
             {loading ? (
                 <>
-                    <div className="animate-spin w-5 h-5 border-2 border-white border-t-transparent rounded-full mr-3" />
+                    <div className="animate-spin w-5 h-5 border-2 border-white dark:border-black !border-t-transparent rounded-full mr-3" />
                     Loading
                 </>
             ) : onlyIcon ? (
