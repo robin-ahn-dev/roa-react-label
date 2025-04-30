@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import { Input } from "../components/-components";
-import { Moon } from "lucide-react";
 
 function Inputs() {
     const [value, setValue] = useState("Hehe");
@@ -12,6 +11,7 @@ function Inputs() {
             <Input type="text" placeholder="Disabled Input" value={value} onChange={(e) => setValue(e.target.value)} label={"Email"} />
             <Input type="text" placeholder="Disabled Input" value={value} onChange={(e) => setValue(e.target.value)} button={"Senden"} />
             <Input type="file" placeholder="Disabled Input"/>
+            <Input type="checkbox" checkbox={"Hehe"}/>
         </div>
     );
 }

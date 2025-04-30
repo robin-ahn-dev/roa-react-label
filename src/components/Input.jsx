@@ -3,6 +3,7 @@ import Button from "./Button";
 
 function Input({
     type = "text",
+    checkbox,
     label,
     placeholder,
     button,
@@ -25,14 +26,21 @@ function Input({
                 <label className="text-sm font-semibold mb-1">{label}</label>
             )}
             <div className="flex items-center gap-2">
-                <input
-                    type={type}
-                    placeholder={placeholder}
-                    value={value}
-                    onChange={onChange}
-                    disabled={disabled}
-                    className={`${baseClass} ${fullClass} ${boldClass} ${disabledClass} ${className}`}
-                />
+                {type === "checkbox" ? (
+                    <label className="flex items-center text-sm text-primarytext dark:text-secondarytext cursor-pointer">
+                        <input type="checkbox" className="mr-2" />
+                        {checkbox}
+                    </label>
+                ) : (
+                    <input
+                        type={type}
+                        placeholder={placeholder}
+                        value={value}
+                        onChange={onChange}
+                        disabled={disabled}
+                        className={`${baseClass} ${fullClass} ${boldClass} ${disabledClass} ${className}`}
+                    />
+                )}
                 {button && <Button text={button} />}
             </div>
         </div>
