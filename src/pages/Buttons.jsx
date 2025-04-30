@@ -2,7 +2,7 @@ import React from "react";
 import { Button } from "../components/-components";
 import { Moon } from "lucide-react";
 
-function Test() {
+function Buttons() {
     return (
         <div className="roa-container-site flex flex-col items-center justify-center gap-3 !w-1/2 border-[1px] border-red-500 rounded-2xl">
             <Button text="Normaler Button" type="normal" />
@@ -25,4 +25,4 @@ function Test() {
     );
 }
 
-export default Test;
+export default Buttons;

@@ -18,7 +18,7 @@ export default {
                 normal: "10px",
             },
 
-            // Theme Blue
+            // Theme Green
             // colors: {
             //     primary: "#21c55e",
             //     secondary: "#21c55e",

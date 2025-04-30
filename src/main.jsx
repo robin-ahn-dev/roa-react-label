@@ -6,7 +6,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import "./style.scss";
 
 // Pages
-import { App, Buttons, Texts } from "./pages/-pages.js";
+import { App, Buttons, Texts, Inputs } from "./pages/-pages.js";
 import { Navbar } from "./modules/-modules.js";
 import { PagesProvider } from "./hooks/usePages.jsx";
 
@@ -37,6 +37,7 @@ const Main = () => {
                     <Route path="/" element={<App />} />
                     <Route path="/texts" element={<Texts />} />
                     <Route path="/buttons" element={<Buttons />} />
+                    <Route path="/inputs" element={<Inputs />} />
                 </Routes>
             </PagesProvider>
         </Router>

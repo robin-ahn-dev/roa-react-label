@@ -18,6 +18,7 @@ function Navbar() {
         { to: "/", icon: <House />, text: "Start" },
         { to: "/texts", icon: <Clock />, text: "Texts" },
         { to: "/buttons", icon: <Clock />, text: "Buttons" },
+        { to: "/inputs", icon: <Clock />, text: "Inputs" },
     ];
 
     return (

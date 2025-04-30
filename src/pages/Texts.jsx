@@ -2,9 +2,9 @@ import React from "react";
 import { Text } from "../components/-components";
 import { Moon } from "lucide-react";
 
-function Test() {
+function Texts() {
     return (
-        <div className="roa-container-site flex flex-col justify-center gap-3 !w-1/2 border-[1px] bg-gray-200 border-red-500 rounded-2xl">
+        <div className="roa-container-site flex flex-col justify-center gap-3 !w-1/2 border-[1px] border-red-500 rounded-2xl">
             <Text type="h1" center>
                 H1 Überschrift
             </Text>
@@ -54,4 +54,4 @@ function Test() {
     );
 }
 
-export default Test;
+export default Texts;
