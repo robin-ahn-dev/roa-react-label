@@ -12,10 +12,19 @@ export default {
                 accenttext: "#2564eb",
                 primarybg: "#ffffff",
                 secondarybg: "#0e0e11",
-                cardbg: "#151517",
+                accentbg: "#2564eb",
+                cardbgDark: "#151517",
+                cardbgDarkHl: "#27272a",
+                cardbgLight: "#ffffff",
+                cardbgLightHl: "#e1e2e6",
+                borderDark: "#27272a",
+                borderLight: "#d4d4d8",
             },
             borderRadius: {
                 normal: "10px",
+            },
+            borderWidth: {
+                thin: "1px",
             },
 
             // Theme Green

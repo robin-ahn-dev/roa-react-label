@@ -38,14 +38,14 @@ function Navbar() {
                         onClick={() => setNavMenuOpen(!navMenuOpen)}
                     ></Button>
                     <Card
-                        className={`absolute -right-[9px] top-[70px] bg-black px-2 py-2 sm:p-4 ${navMenuOpen ? "block" : "hidden"} z-50 bg-white dark:bg-black`}
+                        className={`absolute -right-[9px] top-[70px] px-2 py-2 sm:p-4 ${navMenuOpen ? "block" : "hidden"} z-50`}
                     >
-                        <div className="flex flex-col gap-3 z-50 bg-white dark:bg-secondarybg">
+                        <div className="flex flex-col gap-3 z-50 bg-cardbgLight dark:bg-cardbgDark">
                             {links.map(({ to, icon, text }, index) => (
                                 <Link
                                     to={to}
                                     key={index}
-                                    className={`w-[150px] h-[50px] flex flex-row items-center justify-center border-[1px] border-primary dark:border-secondary rounded-normal bg-white dark:bg-secondarybg text-black dark:text-white ${pageTitle == text ? "!bg-primary dark:!bg-secondary !text-secondarytext dark:!text-primarytext" : ""}`}
+                                    className={`w-[150px] h-[50px] flex flex-row items-center justify-center border-thin border-primary dark:border-secondary rounded-normal bg-cardbgLight dark:bg-cardbgDark text-black dark:text-white ${pageTitle == text ? "!bg-primary dark:!bg-secondary !text-secondarytext dark:!text-primarytext" : ""}`}
                                     onClick={() => (
                                         setPageTitle(text),
                                         setNavMenuOpen(false)
