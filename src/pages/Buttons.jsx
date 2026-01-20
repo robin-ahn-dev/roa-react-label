@@ -5,7 +5,7 @@ import { Moon } from "lucide-react";
 function Buttons() {
     return (
         <div className="roa-container-site flex flex-col items-center justify-center gap-3 !w-1/2 border-thin border-red-500 rounded-2xl">
-            <Button text="Normaler Button" type="normal" />
+            <Button text="Normaler Button" type="default" />
             <Button text="Outline Button" type="outline" />
             <Button text="Error Button" type="error" />
             <Button text="Warning Button" type="warning" />

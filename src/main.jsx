@@ -12,15 +12,17 @@ import { PagesProvider } from "./hooks/usePages.jsx";
 
 const Main = () => {
     useEffect(() => {
+        const savedMode = localStorage.getItem("colormode");
         const isDarkMode = window.matchMedia(
             "(prefers-color-scheme: dark)",
         ).matches;
 
-        if (localStorage.getItem("colormode") == "dark") {
+        if (savedMode === "dark") {
             document.documentElement.classList.add("dark");
-        } else if (localStorage.getItem("colormode") == "light") {
+        } else if (savedMode === "light") {
             document.documentElement.classList.remove("dark");
         } else {
+            // Fallback: System-Präferenz verwenden
             if (isDarkMode) {
                 document.documentElement.classList.add("dark");
             } else {

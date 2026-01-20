@@ -18,7 +18,7 @@ function Input({
     checked,
 }) {
     const baseClass =
-        "text-sm rounded-normal px-4 py-2 bg-cardbgLight dark:bg-cardbgDark border-thin border-borderLight dark:border-borderDark focus:outline-none";
+        "text-sm rounded-normal px-4 py-2 bg-surfaceLight dark:bg-surfaceDark text-surfaceLightText dark:text-surfaceDarkText border-thin border-surfaceLightBorder dark:border-surfaceDarkBorder focus:outline-none";
     const fullClass = full ? "w-full" : "";
     const boldClass = bold ? "font-bold" : "";
     const disabledClass = disabled ? "opacity-50 cursor-not-allowed" : "";
@@ -29,7 +29,7 @@ function Input({
             )}
             <div className="flex items-center gap-2">
                 {type === "checkbox" ? (
-                    <label className="flex items-center text-sm text-primarytext dark:text-secondarytext cursor-pointer">
+                    <label className="flex items-center text-sm text-primarytext dark:text-primarytext cursor-pointer">
                         <input type="checkbox" className="mr-2" checked={checked} onChange={onChange} />
                         {options[0]}
                     </label>
@@ -37,7 +37,7 @@ function Input({
                     options.map((option, index) => (
                         <label
                             key={index}
-                            className="flex items-center text-sm text-primarytext dark:text-secondarytext cursor-pointer"
+                            className="flex items-center text-sm text-primarytext dark:text-primarytext cursor-pointer"
                         >
                             <input
                                 type="radio"
@@ -58,8 +58,8 @@ function Input({
                             checked={checked}
                             onChange={onChange}
                         />
-                        <div className="w-11 h-6 bg-cardbgLightHl peer-focus:outline-none rounded-full peer dark:bg-cardbgDarkHl peer-checked:after:translate-x-full after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-cardbgLight after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-accentbg"></div>
-                        <span className="ml-3 text-sm text-primarytext dark:text-secondarytext">{switchProp}</span>
+                        <div className="w-11 h-6 bg-surfaceLightHl peer-focus:outline-none rounded-full peer dark:bg-surfaceDarkHl peer-checked:after:translate-x-full after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-surfaceLight after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-accent"></div>
+                        <span className="ml-3 text-sm text-primarytext dark:text-primarytext">{switchProp}</span>
                     </label>
                 ) : (
                     <input

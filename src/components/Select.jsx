@@ -17,7 +17,7 @@ function Select({ options, label, onSelect, selectedValue }) {
         <div className="relative inline-block">
             <button
                 onClick={toggleDropdown}
-                className="flex flex-row items-center justify-center gap-2 outline-none border-thin border-r-borderLight dark:border-borderDark bg-cardbgLight dark:bg-cardbgDark px-4 py-2 rounded-normal text-sm font-medium"
+                className="flex flex-row items-center justify-center gap-2 outline-none border-thin border-r-surfaceLightBorder dark:border-surfaceDarkBorder bg-surfaceLight dark:bg-surfaceDark text-surfaceLightText dark:text-surfaceDarkText px-4 py-2 rounded-normal text-sm font-medium"
             >
                 {options.find((option) => option.value === selectedValue)
                     ?.label || "Select an option"}{" "}
@@ -26,14 +26,14 @@ function Select({ options, label, onSelect, selectedValue }) {
                 </div>
             </button>
             {isOpen && (
-                <ul className="absolute left-0 mt-2 w-48 bg-cardbgLight dark:bg-cardbgDark rounded-normal border-thin border-borderLight dark:border-borderDark">
+                <ul className="absolute left-0 mt-2 w-48 bg-surfaceLight dark:bg-surfaceDark text-surfaceLightText dark:text-surfaceDarkText rounded-normal border-thin border-surfaceLightBorder dark:border-surfaceDarkBorder">
                     {options.map((option, index) => (
                         <li
                             key={index}
                             onClick={() => handleSelect(option.value)}
-                            className={`px-4 py-2 text-sm cursor-pointer hover:bg-cardbgLightHl/50 dark:hover:bg-cardbgDarkHl w-[96%] my-1 mx-auto rounded-lg ${
+                            className={`px-4 py-2 text-sm cursor-pointer hover:bg-surfaceLightHl/50 dark:hover:bg-surfaceDarkHl w-[96%] my-1 mx-auto rounded-lg ${
                                 selectedValue === option.value
-                                    ? "bg-cardbgLightHl/50 dark:bg-cardbgDarkHl"
+                                    ? "bg-surfaceLightHl/50 dark:bg-surfaceDarkHl"
                                     : ""
                             }`}
                         >

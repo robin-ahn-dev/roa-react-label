@@ -5,20 +5,30 @@ export default {
     theme: {
         extend: {
             colors: {
-                primary: "#18181a",
-                secondary: "#ffffff",
-                primarytext: "#18181a",
+                primary: "#479eef",
+                primarytext: "#ffffff",
+
+                secondary: "#0060ba",
                 secondarytext: "#ffffff",
-                accenttext: "#2564eb",
-                primarybg: "#ffffff",
-                secondarybg: "#0e0e11",
-                accentbg: "#2564eb",
-                cardbgDark: "#151517",
-                cardbgDarkHl: "#27272a",
-                cardbgLight: "#ffffff",
-                cardbgLightHl: "#e1e2e6",
-                borderDark: "#27272a",
-                borderLight: "#d4d4d8",
+
+                accent: "#9b00ba",
+                accenttext: "#ffffff",
+
+                surfaceLight: "#ffffff",
+                surfaceLightText: "#000000",
+                surfaceLightBg: "#ffffff",
+                surfaceLightBgText: "#000000",
+                surfaceLightHl: "#e1e2e6",
+                surfaceLightHlText: "#000000",
+                surfaceLightBorder: "#d4d4d8",
+
+                surfaceDark: "#1b1b1b",
+                surfaceDarkText: "#ffffff",
+                surfaceDarkBg: "#1b1b1b",
+                surfaceDarkBgText: "#ffffff",
+                surfaceDarkHl: "#27272a",
+                surfaceDarkHlText: "#ffffff",
+                surfaceDarkBorder: "#27272a",
             },
             borderRadius: {
                 normal: "10px",
@@ -26,21 +36,6 @@ export default {
             borderWidth: {
                 thin: "1px",
             },
-
-            // Theme Green
-            // colors: {
-            //     primary: "#21c55e",
-            //     secondary: "#21c55e",
-            //     primarytext: "#ffffff",
-            //     secondarytext: "#ffffff",
-            //     accenttext: "#21c55e",
-            //     primarybg: "#ffffff",
-            //     secondarybg: "#0e0e11",
-            //     cardbg: "#1c1918",
-            // },
-            // borderRadius: {
-            //     normal: "100px",
-            // },
         },
     },
     plugins: [],
