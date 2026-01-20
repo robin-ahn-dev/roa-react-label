@@ -45,7 +45,7 @@ function Input({
 
     // Render Functions
     const renderCheckbox = () => (
-        <label className={`flex items-center ${textClass} cursor-pointer`}>
+        <label className={`flex items-center ${textClass} cursor-pointer select-none`}>
             <input
                 type="checkbox"
                 className="mr-2"
