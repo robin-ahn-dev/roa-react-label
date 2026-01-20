@@ -8,6 +8,7 @@ function Button({
     outline = false,
     bold = false,
     full = false,
+    small = false,
     
     // Content
     text,
@@ -38,13 +39,13 @@ function Button({
     
     // Outline Variante (überschreibt Type-Styles)
     const outlineStyles = outline 
-        ? "bg-transparent border-surfaceLightBorder dark:border-surfaceDarkBorder text-primarytext dark:text-primarytext"
+        ? "bg-transparent border-surfaceLightBorder dark:border-surfaceDarkBorder text-surfaceLightText dark:text-surfaceDarkText"
         : typeStyles[type] || typeStyles.default;
     
     // Size & Layout
     const sizeStyles = onlyIcon 
         ? "w-[50px] h-[50px] p-0 max-h-[50px] min-h-[50px]" 
-        : "py-[7px] px-4 max-h-9";
+        : small ? "py-[4px] px-3 max-h-9" : "py-[7px] px-4 max-h-9";
     
     // Varianten kombinieren
     const variantStyles = [
@@ -66,7 +67,7 @@ function Button({
         if (loading) {
             return (
                 <>
-                    <div className="animate-spin w-5 h-5 border-2 border-white dark:border-black !border-t-transparent rounded-full mr-3" />
+                    <div className="animate-spin w-5 h-5 border-2 border-primaryText dark:border-primaryText !border-t-transparent rounded-full mr-3" />
                     Loading
                 </>
             );

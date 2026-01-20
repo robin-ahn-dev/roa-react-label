@@ -9,7 +9,7 @@ function Hero() {
                 <Text type="h1" bold center>
                     Hallo und Herzlich Willkommen zu meiner Webseite
                 </Text>
-                <Button type="default" text="Get Started" iconRight={<ArrowRight />} />
+                <Button type="default" small text="Get Started" iconRight={<ArrowRight />} />
             </div>
         </div>
     );

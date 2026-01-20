@@ -22,7 +22,7 @@ function Text({
     };
 
     const colorStyles = {
-        default: "text-black dark:text-white",
+        default: "text-surfaceLightText dark:text-surfaceDarkText",
         inverted: "text-white dark:text-black",
         accent: "text-accenttext dark:text-accenttext",
         success: "text-green-500 dark:text-green-400",
