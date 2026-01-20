@@ -25,10 +25,12 @@ function Navbar() {
         <div className="fixed roa-container top-5 left-[50%] translate-x-[-50%] z-50">
             <div className="bg-surfaceLightBg dark:bg-surfaceDarkBg w-full h-full absolute -top-5 left-0 -z-10"></div>
             <Card
-                className="rounded-2xl flex justify-between items-center px-2 py-2 !overflow-visible z-50"
+                className="flex justify-between items-center px-2 py-2 !overflow-visible z-50"
                 noPadding
             >
-                <ColorSwitch />
+                <div className="flex gap-2">
+                    <ColorSwitch />
+                </div>
                 <Text type="default" bold>
                     {pageTitle}
                 </Text>

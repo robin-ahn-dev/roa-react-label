@@ -22,6 +22,7 @@ function Button({
     // Events & Config
     onClick,
     className = "",
+    title,
 }) {
     // Base Styles
     const baseStyles = "text-sm rounded-normal flex items-center justify-center border";
@@ -89,6 +90,7 @@ function Button({
             onClick={onClick}
             disabled={disabled || loading}
             className={variantStyles}
+            title={title}
         >
             {renderContent()}
         </button>

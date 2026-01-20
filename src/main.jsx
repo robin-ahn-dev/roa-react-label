@@ -12,6 +12,12 @@ import { PagesProvider } from "./hooks/usePages.jsx";
 
 const Main = () => {
     useEffect(() => {
+        // Theme initialisieren
+        const savedTheme = localStorage.getItem("theme");
+        const theme = savedTheme || "default";
+        document.documentElement.setAttribute("data-theme", theme);
+
+        // Dark Mode initialisieren
         const savedMode = localStorage.getItem("colormode");
         const isDarkMode = window.matchMedia(
             "(prefers-color-scheme: dark)",

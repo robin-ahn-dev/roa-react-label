@@ -1,0 +1,61 @@
+:root {
+    --color-primary: #479eef;
+    --color-primarytext: #ffffff;
+
+    --color-secondary: #0060ba;
+    --color-secondarytext: #ffffff;
+
+    --color-accent: #9b00ba;
+    --color-accenttext: #ffffff;
+
+    --color-surfaceLight: #ffffff;
+    --color-surfaceLightText: #000000;
+    --color-surfaceLightBg: #ffffff;
+    --color-surfaceLightBgText: #000000;
+    --color-surfaceLightHl: #e1e2e6;
+    --color-surfaceLightHlText: #000000;
+    --color-surfaceLightBorder: #d4d4d8;
+
+    --color-surfaceDark: #1b1b1b;
+    --color-surfaceDarkText: #ffffff;
+    --color-surfaceDarkBg: #1b1b1b;
+    --color-surfaceDarkBgText: #ffffff;
+    --color-surfaceDarkHl: #27272a;
+    --color-surfaceDarkHlText: #ffffff;
+    --color-surfaceDarkBorder: #27272a;
+
+    --border-radius-normal: 10px;
+    --border-radius-card: 15px;
+    --border-width-thin: 1px;
+}
+
+[data-theme="typo3"] {
+    --color-primary: #e77700;
+    --color-primarytext: #ffffff;
+
+    --color-secondary: #ff8400;
+    --color-secondarytext: #ffffff;
+
+    --color-accent: #ff6b35;
+    --color-accenttext: #ffffff;
+
+    --color-surfaceLight: #fff7ed;
+    --color-surfaceLightText: #1c1917;
+    --color-surfaceLightBg: #ffffff;
+    --color-surfaceLightBgText: #1c1917;
+    --color-surfaceLightHl: #ffedd5;
+    --color-surfaceLightHlText: #1c1917;
+    --color-surfaceLightBorder: #fed7aa;
+
+    --color-surfaceDark: #1c1917;
+    --color-surfaceDarkText: #fff7ed;
+    --color-surfaceDarkBg: #292524;
+    --color-surfaceDarkBgText: #fff7ed;
+    --color-surfaceDarkHl: #3a2e1f;
+    --color-surfaceDarkHlText: #fff7ed;
+    --color-surfaceDarkBorder: #4a3a2a;
+
+    --border-radius-normal: 0px;
+    --border-radius-card: 0px;
+    --border-width-thin: 2px;
+}
