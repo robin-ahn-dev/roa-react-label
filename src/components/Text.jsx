@@ -29,7 +29,7 @@ function Text({
         success: "text-green-500 dark:text-green-400",
         error: "text-red-500 dark:text-red-400",
         warning: "text-yellow-500 dark:text-yellow-400",
-        muted: "text-gray-300 dark:text-gray-600",
+        muted: "text-gray-400 dark:text-gray-500",
     };
 
     const typeClass = typeStyles[type] || typeStyles.default;
