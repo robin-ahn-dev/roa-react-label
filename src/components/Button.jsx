@@ -39,7 +39,7 @@ function Button({
     
     // Outline Variante (überschreibt Type-Styles)
     const outlineStyles = outline 
-        ? "bg-transparent border-surfaceLightBorder dark:border-surfaceDarkBorder text-surfaceLightText dark:text-surfaceDarkText"
+        ? "bg-transparent border-primary dark:border-primary text-primary dark:text-primary"
         : typeStyles[type] || typeStyles.default;
     
     // Size & Layout

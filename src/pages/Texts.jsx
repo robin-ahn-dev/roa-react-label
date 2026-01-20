@@ -1,10 +1,9 @@
 import React from "react";
 import { Text } from "../components/-components";
-import { Moon } from "lucide-react";
 
 function Texts() {
     return (
-        <div className="roa-container-site flex flex-col justify-center gap-3 !w-1/2 border-thin border-red-500 rounded-2xl">
+        <div className="roa-container-site flex flex-col justify-center gap-3 border-thin border-red-500 rounded-2xl">
             <Text type="h1" center>
                 H1 Überschrift
             </Text>
@@ -13,6 +12,9 @@ function Texts() {
             </Text>
             <Text type="h3" center>
                 H3 Überschrift
+            </Text>
+            <Text type="h4" center>
+                H4 Überschrift
             </Text>
             <Text type="default" center>
                 default Text
