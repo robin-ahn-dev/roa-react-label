@@ -31,7 +31,7 @@ function Select({ options, label, onSelect, selectedValue }) {
                         <li
                             key={index}
                             onClick={() => handleSelect(option.value)}
-                            className={`px-4 py-2 text-sm cursor-pointer hover:bg-surfaceLightHl/50 dark:hover:bg-surfaceDarkHl w-[96%] my-1 mx-auto rounded-lg ${
+                            className={`px-4 py-2 text-sm cursor-pointer transition-all duration-300 hover:bg-surfaceLightHl dark:hover:bg-surfaceDarkHl w-[96%] my-1 mx-auto rounded-lg ${
                                 selectedValue === option.value
                                     ? "bg-surfaceLightHl/50 dark:bg-surfaceDarkHl"
                                     : ""

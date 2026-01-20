@@ -1,14 +1,15 @@
 import React, { useState } from "react";
-import { Input, Select } from "../components/-components";
+import { Input, Select, FileUpload } from "../components/-components";
 
 function Inputs() {
     const [value, setValue] = useState("Hehe");
     const [switched, setSwitched] = useState(false);
     const [selectedValue, setSelectedValue] = useState("option1");
+    const [selectedValueCol, setSelectedValueCol] = useState("option5");
     const [selectedValuee, setSelectedValuee] = useState(null);
 
     return (
-        <div className="roa-container-site flex flex-col items-center justify-center gap-3 !w-1/2 border-thin border-red-500 rounded-2xl">
+        <div className="roa-container-site flex flex-col items-center justify-center gap-8 border-thin border-red-500 rounded-2xl">
             <Input
                 type="text"
                 placeholder="Normaler Input"
@@ -36,7 +37,7 @@ function Inputs() {
                 onChange={(e) => setValue(e.target.value)}
                 button={"Senden"}
             />
-            <Input type="file" placeholder="Disabled Input" />
+            <FileUpload />
             <Input
                 type="radio"
                 options={[
@@ -44,10 +45,22 @@ function Inputs() {
                     { value: "option2", label: "Option 2" },
                     { value: "option3", label: "Option 3" },
                 ]}
-                name="example"
+                name="example-horizontal"
                 value={selectedValue}
                 onChange={(e) => setSelectedValue(e.target.value)}
-                label="Choose an option"
+                label="Choose an option (Horizontal)"
+            />
+            <Input
+                type="radio-col"
+                options={[
+                    { value: "option4", label: "Option 4" },
+                    { value: "option5", label: "Option 5" },
+                    { value: "option6", label: "Option 6" },
+                ]}
+                name="example-column"
+                value={selectedValueCol}
+                onChange={(e) => setSelectedValueCol(e.target.value)}
+                label="Choose an option (Column)"
             />
             <Input
                 type="switch"
